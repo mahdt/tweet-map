@@ -1,0 +1,13 @@
+html
+  head
+    title
+    base(href='/')
+    link(rel="stylesheet" type="text/css" href="css/main.css" media="screen")
+  body(onload='initMap()')
+    script(src='components/socket.io-client/socket.io.js')
+    script(src='bower_components/underscore/underscore-min.js')
+    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization&sensor=true_or_false')
+    script(src='js/map.js')
+    input#filter
+    #map
